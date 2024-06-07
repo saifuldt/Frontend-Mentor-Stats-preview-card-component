@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+</head>
+<body>
+<main class="container flex flex-col md:flex-row-reverse justify-center items-center md:max-w-[100%] md:h-[600px] bg-[--Very-dark-blue]
+">
+  <section class="imgs flex justify-center items-center ">
+    <div class="desktop-img w-[350px] md:h-[300px]  hidden md:block  bg-[--SoftViolet] rounded-tr-lg rounded-br-lg ">
+      <img class="w-[100%] opacity-30 contrast-200 rounded-tr-lg rounded-br-lg" src="./images/image-header-desktop.jpg" alt="img">
+    </div>
+    <div class="mobile-img w-[350px] mt-10 rounded-tl-lg rounded-tr-lg md:hidden bg-[--SoftViolet] ">
+      <img class="rounded-tl-lg rounded-tr-lg w-[100%] opacity-30 contrast-200" src="./images/image-header-mobile.jpg" alt="img">
+      <div class="acent w-[100%] h-[100%] bg-[--SoftViolet]"></div>
+    </div>
+  </section>
+  <section class="mb-16 md:mb-0 pt-10 pb-10  head-text bg-[--Dark-desaturated-blue] flex flex-col justify-center items-center w-[350px] md:max-w-[650px] md:h-[300px] md:rounded-tl-lg md:rounded-bl-lg rounded-bl-lg rounded-br-lg gap-6">
+    <div class="head flex flex-col justify-center items-center md:w-[400px] w-[250px] gap-4 ">
+      <h1 class=" md:w-[300px] md:text-start text-center text-[--White] text-[25px] font-[Inter] font-bold leading-7 ">
+        Get <span class="text-[--SoftViolet]">insights</span> that help your business grow.
+      </h1>
+      <p class="md:w-[300px] w-[200px] text-center md:text-start text-[--Slightly-transparent] text-[14px] font-[Lexend] ">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.
+      </p>
+    </div>
+    <div class="counter flex flex-col md:flex-row gap-6 justify-center md:justify-start items-center w-[300px] text-center md:text-start ">
+      <div class="count">
+        <h2 class="text-[--White] text-[20px] font-[Inter] font-[700]">10k+</h2>
+        <p class="text-[--Slightly-transparent] text-[14px] font-[400] uppercase">companies</p>
+      </div>
+      <div class="count">
+        <h2 class="text-[--White] text-[20px] font-[Inter] font-[700]">314</h2>
+        <p class="text-[--Slightly-transparent] text-[14px] font-[400] uppercase">templates</p>
+      </div>
+      <div class="count">
+        <h2 class="text-[--White] text-[20px] font-[Inter] font-[700] uppercase">12m+</h2>
+        <p class="text-[--Slightly-transparent] text-[14px] font-[400] uppercase">queries</p>
+      </div>
+    </div>
+  </section>
+</main>
+  
+</body>
+</html>
